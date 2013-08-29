@@ -3,14 +3,16 @@ require([
   'scripts/language-example',
   'scripts/cover-example',
   'scripts/button-example',
-  'scripts/playlist-example'
-], function(models, languageExample, coverExample, buttonExample, playlistExample) {
+  'scripts/playlist-example',
+  'scripts/playlist-search'
+], function(models, languageExample, coverExample, buttonExample, playlistExample, playlistSearch) {
   'use strict';
 
   languageExample.doHelloWorld();
   coverExample.doCoverForAlbum();
   buttonExample.doShareButtonForArtist();
   buttonExample.doPlayButtonForAlbum();
-  playlistExample.doPlaylistForAlbum();
+  // playlistExample.doPlaylistForAlbum();
+  playlistSearch.doPlaylistSearch();
 
 });
