@@ -9,13 +9,23 @@ require([
     var filter  = document.getElementById("filter");
     var reset   = document.getElementById("reset");
 
+    var items = document.getElementsByTagName("li");
+
+      for (var i = 0; i < items.length; i++) {
+        var playlistName = items[i].innerText;
+
+        if (playlistName === 'undefined') {
+          items[i].style.display = "none";
+        }
+      }
+
     filter.addEventListener("click", function(event) {
       var items = document.getElementsByTagName("li");
 
       for (var i = 0; i < items.length; i++) {
-        var animal = items[i].innerText;
+        var playlistName = items[i].innerText;
 
-        if (animal.match(query.value) === null) {
+        if (playlistName.match(query.value) === null) {
           items[i].style.display = "none";
         } else {
           items[i].style.display = "list-item";

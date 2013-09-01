@@ -16,11 +16,11 @@ require([
         // create an <li>
         var item = document.createElement('li');
         var link = document.createElement('a');
-        //get the URI for the playlist in question, and
-        //set the href to the URI
+        //get the URI for the playlist in question
         var href = snapshot._uris[i];
+        //set the href to the URI
         link.setAttribute("href", href);
-        // set the innerText of the <li> to the _meta[i].name
+        // set the innerText of the <a> to the _meta[i].name
         link.innerText = snapshot._meta[i].name;
         // append <li> to container
         item.appendChild(link);
