@@ -9,9 +9,9 @@ require([
   'use strict';
 
   languageExample.doHelloWorld();
-  coverExample.doCoverForAlbum();
-  buttonExample.doShareButtonForArtist();
-  buttonExample.doPlayButtonForAlbum();
+  // coverExample.doCoverForAlbum();
+  // buttonExample.doShareButtonForArtist();
+  // buttonExample.doPlayButtonForAlbum();
   // playlistExample.doPlaylistForAlbum();
   playlistSearch.doPlaylistSearch();
 
