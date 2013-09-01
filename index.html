@@ -11,14 +11,19 @@
     <link rel="stylesheet" href="$views/css/buttons.css">
     <!-- <link rel="stylesheet" href="$views/css/throbber.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('sp://import/css/api.css');
+    </style>
     <!-- If you are using the preview SDK for webplayer then uncomment the script below -->
     <!--script src="http://d1hza3lyffsoht.cloudfront.net/preview-sdk/bootstrap.js"></script-->
   </head>
   <body>
     <h1></h1>
     <input type="text" id="query">
-    <input type="submit" value="Filter" id="filter">
-    <input type="reset" value="Reset" id="reset">
+    <button class="sp-button sp-primary" id="filter">Filter</button>
+    <button class="sp-button" id="reset">Reset</button>
+    <!-- input type="submit" value="Filter" id="filter">
+    <input type="reset" value="Reset" id="reset" -->
     <div id="playlistContainer"></div>
     <div id="albumCoverContainer"></div>
     <div id="buttonContainer"></div>
