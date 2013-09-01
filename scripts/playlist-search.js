@@ -16,8 +16,9 @@ require([
         // create an <li>
         var item = document.createElement('li');
         var link = document.createElement('a');
-        //set the href
-        var href = "spotify:app:boilerplate-app";
+        //get the URI for the playlist in question, and
+        //set the href to the URI
+        var href = snapshot._uris[i];
         link.setAttribute("href", href);
         // set the innerText of the <li> to the _meta[i].name
         link.innerText = snapshot._meta[i].name;
