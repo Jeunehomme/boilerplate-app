@@ -24,10 +24,14 @@ require([
 
       for (var i = 0; i < items.length; i++) {
         var playlistName = items[i].innerText;
+        playlistName = playlistName.toLowerCase();
+
+        var searchValue = query.value;
+        searchValue = searchValue.toLowerCase();
 
         if (playlistName === 'undefined') {
           items[i].style.display = "none";
-        } else if (playlistName.match(query.value) === null) {
+        } else if (playlistName.match(searchValue) === null) {
           items[i].style.display = "none";
         } else {
           items[i].style.display = "list-item";
