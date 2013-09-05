@@ -8,6 +8,7 @@ require([
     var query   = document.getElementById("query");
     var filter  = document.getElementById("filter");
     var reset   = document.getElementById("reset");
+    var form    = document.getElementById("wrapper");
 
     var items = document.getElementsByTagName("li");
 
@@ -30,7 +31,8 @@ require([
       }
     }
 
-    filter.addEventListener("click", function(event) {
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
       var items = document.getElementsByTagName("li");
 
       for (var i = 0; i < items.length; i++) {
